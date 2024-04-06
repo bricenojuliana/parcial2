@@ -30,6 +30,7 @@ public class EmployeeService {
     }
 
     public Employee updateEmployee(Employee employee) {
+        System.out.println(employee);
         if (employeeRepository.findById(employee.getEmployeeId()).isPresent()) {
             return employeeRepository.save(employee);
         }
