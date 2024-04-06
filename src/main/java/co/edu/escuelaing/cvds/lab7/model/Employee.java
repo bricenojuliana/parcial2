@@ -12,11 +12,11 @@ import java.util.Objects;
 public class Employee {
     @Id
     @Column(name = "EMPLOYEE_ID")
-    private String employee_id;
+    private String employeeId;
     @Column(name = "FIRST_NAME")
-    private String first_name;
+    private String firstName;
     @Column(name = "LAST_NAME")
-    private String last_name;
+    private String lastName;
     @Column(name = "ROLE")
     private String role;
     @Column(name = "SALARY")
@@ -25,36 +25,36 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String employee_id, String first_name, String last_name, String role, double salary) {
-        this.employee_id = employee_id;
-        this.first_name = first_name;
-        this.last_name = last_name;
+    public Employee(String employeeId, String firstName, String lastName, String role, double salary) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.role = role;
         this.salary = salary;
     }
 
-    public String getEmployee_id() {
-        return employee_id;
+    public String getEmployeeId() {
+        return employeeId;
     }
 
-    public void setEmployee_id(String employee_id) {
-        this.employee_id = employee_id;
+    public void setEmployeeId(String employeeId) {
+        this.employeeId = employeeId;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getRole() {
@@ -72,5 +72,4 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
 }

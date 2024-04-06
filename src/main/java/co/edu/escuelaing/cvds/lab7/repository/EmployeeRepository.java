@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, String> {
-    @Query("SELECT e FROM Employee e WHERE e.first_name LIKE %:name% OR e.last_name LIKE %:name%")
+    @Query("SELECT e FROM Employee e WHERE e.firstName LIKE %:name% OR e.lastName LIKE %:name%")
     List<Employee> findByPartialName(@Param("name") String name);
 }
