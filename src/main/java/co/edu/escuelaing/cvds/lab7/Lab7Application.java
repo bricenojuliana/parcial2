@@ -1,5 +1,6 @@
 package co.edu.escuelaing.cvds.lab7;
 
+import co.edu.escuelaing.cvds.lab7.config.CorsConfig;
 import co.edu.escuelaing.cvds.lab7.model.Configuration;
 import co.edu.escuelaing.cvds.lab7.model.Employee;
 import co.edu.escuelaing.cvds.lab7.model.User;
@@ -13,12 +14,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 
 @SpringBootApplication
 @Slf4j
+@Import(CorsConfig.class)
 public class Lab7Application {
 	private final ConfigurationService configurationService;
 
